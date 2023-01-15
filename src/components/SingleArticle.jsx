@@ -11,19 +11,21 @@ const SingleArticle = () => {
     <>
       <Menu />
       <div className="SingleArticleWrapper">
-        <h2>{article.title}</h2>
-        <img
-          src={article.imageUrl}
-          alt="Generic placeholder"
-          className="SingleArticleImg"
-        />
+        <div className="SingleArticleContainer">
+          <h2>{article.title}</h2>
+          <img
+            src={article.imageUrl}
+            alt="Generic placeholder"
+            className="SingleArticleImg"
+          />
 
-        <h3>{article.description}</h3>
+          <h3>{article.description}</h3>
 
-        <h4>
-          Expert Comment: <br /> <br />
-          {article.expertComment}
-        </h4>
+          <h4>
+            Expert Comment: <br /> <br />
+            {article.expertComment}
+          </h4>
+        </div>
       </div>
     </>
   );

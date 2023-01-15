@@ -1,5 +1,10 @@
 .App {
-  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #839695;
 }
 
 nav a {
@@ -25,37 +30,28 @@ nav {
   background: #112b3e;
 }
 
-body {
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 83px;
-
-  background: #839695;
-}
-
-.ArticleItem {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 10px;
-  padding: 10px;
+.Wrapper {
+  padding: 0 10px;
+  margin: 90px auto;
+  box-sizing: border-box;
 }
 
 .ArticleContainer {
-  align-items: center;
-  margin-top: 20%;
-  margin-left: 5%;
+  max-width: 350px;
+  margin: 5px auto;
   background: #112b3e;
 }
 
 .ArticleImg {
+  height: 200px;
   width: 100%;
-  height: 65%;
+  margin: 0 -20px;
 }
 
 .ArticleLink {
-  width: 100%;
-  height: 35%;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 700;
@@ -67,10 +63,16 @@ body {
   color: #ffffff;
 }
 
+.SingleArticleWrapper {
+  padding: 0 10px;
+  margin: 90px auto;
+  box-sizing: border-box;
+}
+
 .SingleArticleImg {
   position: absolute;
   width: 80%;
-  height: 60%;
+  height: 450px;
   left: 10%;
   top: 40%;
 }
@@ -133,4 +135,31 @@ h4 {
   top: 210%;
 
   background: #ffffff;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  h4 {
+    height: 5%;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ArticleItem {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .ArticleItem {
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1400px;
+  }
 }

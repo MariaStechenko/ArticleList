@@ -1,4 +1,6 @@
-# React Project for the React Course
+# Article List
+
+This App is developed using React library (React Router)
 
 ## Available Scripts
 
